@@ -5,127 +5,263 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Vishnu Vedesh Reddy Yeruva</title>
   <meta name="description" content="Vishnu Vedesh Reddy Yeruva. Looking for IT service desk, L1 support and ServiceNow roles in India.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23101828'/%3E%3Cpath d='M9 9l7 15 7-15' stroke='%23fff' stroke-width='3' fill='none'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
   <script>
     try {
       var t = localStorage.getItem("theme");
-      if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      if (t !== "light" && t !== "dark") t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
       document.documentElement.setAttribute("data-theme", t);
     } catch (e) {}
   </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top">Vishnu Vedesh Reddy Yeruva</a>
-    <nav aria-label="Main">
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <button type="button" class="theme-toggle" aria-pressed="false">Dark mode</button>
-    </nav>
-  </header>
+  <div class="page-frame">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Vishnu Vedesh Reddy Yeruva, home">Vishnu Vedesh Reddy Yeruva</a>
+      <nav aria-label="Main navigation">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"/></svg>
+        </button>
+      </nav>
+    </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Vishnu Vedesh Reddy Yeruva</h1>
-        <p>A year of telecom access provisioning at Hexaware, then ServiceNow ITSM and scripting on a personal developer instance. Now looking for the next support role.</p>
-        <a class="button" href="assets/cv.pdf" download>Download CV</a>
-      </div>
-      <dl class="record" aria-label="Summary">
-        <div class="record-head"><span>Candidate record</span><span class="state">Open to work</span></div>
-        <div><dt>Looking for</dt><dd>IT service desk, L1 support, ServiceNow</dd></div>
-        <div><dt>Location</dt><dd>India</dd></div>
-        <div><dt>Last role</dt><dd>Associate Software Engineer, Hexaware (Feb 2024 to Mar 2025)</dd></div>
-        <div><dt>Education</dt><dd>BCA 2023, MBA in HR 2026</dd></div>
-        <div><dt>Learning</dt><dd>ServiceNow ITSM, JavaScript</dd></div>
-      </dl>
-    </section>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-art" data-reveal>
+          <svg viewBox="0 0 440 260" role="img" aria-labelledby="hero-art-title">
+            <title id="hero-art-title">A person wearing headphones, seated at a desk facing a monitor</title>
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 193h396"/>
+              <path d="M54 193v27m332-27v27m-8 0h16m-348 0h16"/>
+              <rect x="105" y="62" width="116" height="92" rx="5"/>
+              <path d="M118 77h34"/>
+              <path d="M118 89h53"/>
+              <path d="M118 101h42"/>
+              <path d="M118 113h28"/>
+              <path class="art-accent" d="M118 125h48"/>
+              <path d="M163 154v23m-23 0h46"/>
+              <path d="M124 184h78m-66 0v-5m10 5v-5m10 5v-5m10 5v-5m10 5v-5"/>
+              <path d="M50 171h32l-4 21H54z"/>
+              <path d="M52 175h28"/>
+              <path d="M66 171v-26"/>
+              <path d="M66 163c-10 0-15-6-15-15 9 0 15 5 15 15Z"/>
+              <path d="M66 155c0-10 6-16 15-17 0 9-5 15-15 17Z"/>
+              <path d="M65 167c-7-6-8-13-4-19 7 5 9 12 4 19Z"/>
+              <path d="M378 174h22v18h-22z"/>
+              <path d="M380 178h18"/>
+              <path d="M400 179c12-1 13 12 0 12"/>
+              <path d="M383 169c-3-4 2-5 0-9m8 9c-3-4 2-5 0-9"/>
+              <path d="M269 145v27q0 8 8 8h56q8 0 8-8v-27"/>
+              <path d="M280 181q25-7 50 0l-4 8h-42z"/>
+              <path d="M305 189v23m-24 0h48m-38 0-10 9m10-9 7 9m31-9-10 9m10-9-7 9"/>
+              <path d="M269 165h-8q-8 0-8 8v8m82-16h8q8 0 8 8v8"/>
+              <path d="M280 98c0-17 10-29 25-29s25 12 25 29v29c0 18-10 31-25 31s-25-13-25-31z"/>
+              <path d="M280 102c11-1 19-7 24-16 7 10 16 15 26 16"/>
+              <path class="art-accent" d="M278 99c1-21 11-35 27-35s26 14 27 35"/>
+              <path d="M278 100c-8-2-13 2-13 9v8c0 6 5 10 13 9m56-26c8-2 13 2 13 9v8c0 6-5 10-13 9"/>
+              <path d="M272 104v10m68-10v10"/>
+              <path d="M294 155v9c-19 4-34 13-42 27l-4 7h114l-4-7c-8-14-23-23-42-27v-9"/>
+              <path d="M292 164c8 5 17 7 26 7s18-2 26-7"/>
+              <path d="M299 188v4m14-4v4m14-4v4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="hero-copy" data-reveal>
+          <h1 id="hero-title">Vishnu Vedesh Reddy Yeruva</h1>
+          <p class="tagline">IT Service Desk <span>•</span> L1 Support <span>•</span> ServiceNow</p>
+          <p class="intro">A year of telecom access provisioning at Hexaware, then ServiceNow ITSM and scripting on a personal developer instance. Now looking for the next support role.</p>
+          <div class="hero-actions">
+            <a class="button status-button" href="#contact"><span class="status-dot"></span>Open to work</a>
+            <span class="action-or">or</span>
+            <a class="button button-secondary" href="mailto:vedeshvishnu@gmail.com">Email me</a>
+          </div>
+        </div>
+        <div class="record-wrap" data-reveal>
+          <p class="record-label" id="record-title">Candidate record</p>
+          <dl class="record" aria-labelledby="record-title">
+            <div><dt>Looking for</dt><dd>IT service desk, L1 support, ServiceNow</dd></div>
+            <div><dt>Location</dt><dd>India</dd></div>
+            <div><dt>Last role</dt><dd>Associate Software Engineer, Hexaware (Feb 2024 to Mar 2025)</dd></div>
+            <div><dt>Learning</dt><dd>ServiceNow ITSM, JavaScript</dd></div>
+          </dl>
+        </div>
+      </section>
 
-    <section id="experience" class="block">
-      <h2>Experience</h2>
-      <div class="rows">
-        <article class="row">
-          <p class="meta">Mar 2025 to present</p>
+      <section id="experience" class="block career" aria-labelledby="career-title">
+        <div class="section-heading" data-reveal>
           <div>
-            <h3>ServiceNow self-study</h3>
-            <p class="sub">On a personal developer instance (PDI)</p>
-            <ul>
-              <li>Learned ITSM architecture, platform administration and core workflows</li>
-              <li>Built and tested IT catalog request lifecycles</li>
-              <li>Wrote JavaScript Business Rules (server-side) and Client Scripts (client-side) for data validation and ticket routing</li>
+            <p class="eyebrow">So far</p>
+            <div class="career-title-line">
+              <h2 id="career-title">Career</h2>
+              <span class="hand-note">Where I've worked
+                <svg viewBox="0 0 112 36" aria-hidden="true"><path d="M3 8c33-9 66-8 91 6 5 3 8 6 10 10m0 0-10-3m10 3 1-10"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="cv-prompt"><span>Need a copy?</span><a class="button cv-button" href="assets/cv.pdf" download>Download CV <span aria-hidden="true">↓</span></a></div>
+        </div>
+        <div class="career-content">
+          <div class="timeline">
+            <article class="career-card" data-reveal>
+              <p class="meta">Mar 2025 to present</p>
+              <h3>ServiceNow self-study</h3>
+              <p class="sub">On a personal developer instance (PDI)</p>
+              <ul>
+                <li>Learned ITSM architecture, platform administration and core workflows</li>
+                <li>Built and tested IT catalog request lifecycles</li>
+                <li>Wrote JavaScript Business Rules (server-side) and Client Scripts (client-side) for data validation and ticket routing</li>
+              </ul>
+            </article>
+            <article class="career-card" data-reveal>
+              <p class="meta">Feb 2024 to Mar 2025</p>
+              <h3>Associate Software Engineer, Hexaware Technologies</h3>
+              <p class="sub">Infrastructure Management and Support trainee, Mavericks batch</p>
+              <ul>
+                <li>Ran broadband and internet provisioning workflows for the Odido Netherlands telecom project (Network Service Delivery)</li>
+                <li>Handled daily queue routing and request fulfilment in Clarify and Versa Tracker, meeting SLA targets</li>
+                <li>Updated Work-in-Progress orders daily and used PuTTY for remote server checks</li>
+                <li>Followed SOPs to keep provisioning data accurate and reduce order fallouts and backlog</li>
+              </ul>
+            </article>
+          </div>
+          <p class="education-line">BCA 2023, MBA in HR 2026</p>
+          <div class="mountain-art" aria-hidden="true">
+            <svg viewBox="0 0 700 152" role="presentation">
+              <g class="mountain-lines" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 125 70 76l50-39 45 49 40-28 50 48 40-77 48 77 47-53 48 53 47-62 43 62 47-39 55 39H10Z"/>
+                <path d="M120 37V19M295 29V18M485 44V17M575 67V27"/>
+                <path d="m127 45 8 8m-1-13 8 8m-1-13 8 8m69 21 8 9m-1-16 8 9m72-41 8 10m-1-17 8 10m41 40 8 9m-1-16 8 9m72-35 8 10m-1-17 8 10m41 25 8 10m-1-17 8 10"/>
+              </g>
+              <g class="mountain-labels">
+                <rect x="80" y="1" width="80" height="18" rx="9"/>
+                <text x="120" y="13">ServiceNow</text>
+                <rect x="452" y="0" width="66" height="18" rx="9"/>
+                <text x="485" y="12">Hexaware</text>
+                <rect x="279" y="0" width="32" height="18" rx="9"/>
+                <text x="295" y="12">BCA</text>
+                <rect x="559" y="9" width="32" height="18" rx="9"/>
+                <text x="575" y="21">MBA</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="block" aria-labelledby="skills-title">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow">Core</p><h2 id="skills-title">Skills</h2></div>
+        </div>
+        <div class="skills">
+          <div class="skill-group" data-reveal>
+            <h3>Support and provisioning</h3>
+            <ul class="skill-list">
+              <li>Access provisioning</li>
+              <li>Incident management</li>
+              <li>Troubleshooting</li>
+              <li>Clarify</li>
+              <li>Versa Tracker</li>
+              <li>PuTTY</li>
+              <li>Windows CLI</li>
+              <li>Excel</li>
+              <li>Hardware &amp; systems</li>
+              <li>Networking</li>
             </ul>
           </div>
-        </article>
-        <article class="row">
-          <p class="meta">Feb 2024 to Mar 2025</p>
-          <div>
-            <h3>Associate Software Engineer, Hexaware Technologies</h3>
-            <p class="sub">Infrastructure Management and Support trainee, Mavericks batch</p>
-            <ul>
-              <li>Ran broadband and internet provisioning workflows for the Odido Netherlands telecom project (Network Service Delivery)</li>
-              <li>Handled daily queue routing and request fulfilment in Clarify and Versa Tracker, meeting SLA targets</li>
-              <li>Updated Work-in-Progress orders daily and used PuTTY for remote server checks</li>
-              <li>Followed SOPs to keep provisioning data accurate and reduce order fallouts and backlog</li>
+          <div class="skill-group" data-reveal>
+            <h3>ServiceNow (personal instance)</h3>
+            <ul class="skill-list">
+              <li>ITSM</li>
+              <li>Flow Designer</li>
+              <li>Business Rules</li>
+              <li>Client Scripts</li>
             </ul>
           </div>
-        </article>
+          <div class="skill-group" data-reveal>
+            <h3>Other</h3>
+            <ul class="skill-list">
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="block" aria-labelledby="contact-title">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow">Say hi</p><h2 id="contact-title">Contact</h2></div>
+        </div>
+        <div class="contact-content" data-reveal>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:vedeshvishnu@gmail.com">vedeshvishnu@gmail.com<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/vishnu-reddy-b92821401/" target="_blank" rel="noopener">linkedin.com/in/vishnu-reddy-b92821401<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a></li>
+            <li><span>GitHub</span><a href="https://github.com/ReddyVishnuY" target="_blank" rel="noopener">github.com/ReddyVishnuY<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a></li>
+          </ul>
+          <a class="button talk-button" href="mailto:vedeshvishnu@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="block setup-section" aria-labelledby="setup-title">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow">Just a hobby</p><h2 id="setup-title">PC setup</h2></div>
+        </div>
+        <details class="setup-inner">
+          <summary>View specs</summary>
+          <dl class="specs">
+            <div><dt>CPU</dt><dd>Intel Core Ultra 7 265K</dd></div>
+            <div><dt>GPU</dt><dd>NVIDIA RTX 5070 Ti</dd></div>
+            <div><dt>RAM</dt><dd>16GB</dd></div>
+            <div><dt>Storage</dt><dd>2TB NVMe Gen 3 SSD</dd></div>
+            <div><dt>Monitor</dt><dd>LG UltraGear 1080p 240Hz</dd></div>
+            <div><dt>Keyboard</dt><dd>Menel Nia 87</dd></div>
+            <div><dt>Mouse</dt><dd>VXE R1 (NearLink)</dd></div>
+          </dl>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <svg class="footer-art" viewBox="0 0 130 72" role="img" aria-label="Small line illustration of a person at a desk">
+          <g transform="translate(3 2) scale(.28)" fill="none" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 193h396"/>
+            <path d="M54 193v27m332-27v27m-8 0h16m-348 0h16"/>
+            <rect x="105" y="62" width="116" height="92" rx="5"/>
+            <path d="M118 77h34m-34 12h53m-53 12h42m-42 12h28"/>
+            <path class="art-accent" d="M118 125h48"/>
+            <path d="M163 154v23m-23 0h46m-62 7h78"/>
+            <path d="M50 171h32l-4 21H54zM52 175h28m14-4v-26"/>
+            <path d="M66 163c-10 0-15-6-15-15 9 0 15 5 15 15Zm0-8c0-10 6-16 15-17 0 9-5 15-15 17Zm-1 12c-7-6-8-13-4-19"/>
+            <path d="M378 174h22v18h-22zm22 5c12-1 13 12 0 12"/>
+            <path d="M269 145v27q0 8 8 8h56q8 0 8-8v-27m-61 36q25-7 50 0l-4 8h-42z"/>
+            <path d="M305 189v23m-24 0h48m-38 0-10 9m10-9 7 9m31-9-10 9m10-9-7 9"/>
+            <path d="M280 98c0-17 10-29 25-29s25 12 25 29v29c0 18-10 31-25 31s-25-13-25-31z"/>
+            <path d="M280 102c11-1 19-7 24-16 7 10 16 15 26 16"/>
+            <path class="art-accent" d="M278 99c1-21 11-35 27-35s26 14 27 35"/>
+            <path d="M278 100c-8-2-13 2-13 9v8c0 6 5 10 13 9m56-26c8-2 13 2 13 9v8c0 6-5 10-13 9m-62-5v10m68-10v10"/>
+            <path d="M294 155v9c-19 4-34 13-42 27l-4 7h114l-4-7c-8-14-23-23-42-27v-9m-7 9c8 5 17 7 26 7s18-2 26-7"/>
+          </g>
+        </svg>
+        <span class="footer-divider" aria-hidden="true"></span>
+        <div class="footer-socials">
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/vishnu-reddy-b92821401/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/ReddyVishnuY" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:vedeshvishnu@gmail.com">Email</a>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <section id="skills" class="block">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div>
-          <h3>Support and provisioning</h3>
-          <p>Access provisioning, incident management, troubleshooting, Clarify, Versa Tracker, PuTTY, Windows CLI, Excel</p>
-        </div>
-        <div>
-          <h3>ServiceNow (personal instance)</h3>
-          <p>ITSM, Flow Designer, Business Rules, Client Scripts</p>
-        </div>
-        <div>
-          <h3>Other</h3>
-          <p>JavaScript, Python, SQL</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="block">
-      <h2>Contact</h2>
-      <ul class="links">
-        <li><span>Email</span><a href="mailto:vedeshvishnu@gmail.com">vedeshvishnu@gmail.com</a></li>
-        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/vishnu-reddy-b92821401/" target="_blank" rel="noopener">linkedin.com/in/vishnu-reddy-b92821401</a></li>
-        <li><span>GitHub</span><a href="https://github.com/ReddyVishnuY" target="_blank" rel="noopener">github.com/ReddyVishnuY</a></li>
-      </ul>
-    </section>
-
-  <section class="setup">
-    <details class="setup-inner">
-      <summary>
-        <span class="setup-title">My PC setup</span>
-        <span class="setup-hint">Just a hobby. Tap to view specs</span>
-      </summary>
-      <dl class="specs">
-        <div><dt>CPU</dt><dd>Intel Core Ultra 7 265K</dd></div>
-        <div><dt>GPU</dt><dd>NVIDIA RTX 5070 Ti</dd></div>
-        <div><dt>RAM</dt><dd>16GB</dd></div>
-        <div><dt>Storage</dt><dd>2TB NVMe Gen 3 SSD</dd></div>
-        <div><dt>Monitor</dt><dd>LG UltraGear 1080p 240Hz</dd></div>
-        <div><dt>Keyboard</dt><dd>Menel Nia 87</dd></div>
-        <div><dt>Mouse</dt><dd>VXE R1 (NearLink)</dd></div>
-      </dl>
-    </details>
-  </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 Vishnu Vedesh Reddy Yeruva</p>
-  </footer>
+      <div class="wordmark" aria-hidden="true">Vishnu</div>
+      <p class="copyright">&copy; 2026 Vishnu Vedesh Reddy Yeruva</p>
+    </footer>
+  </div>
   <script src="js/theme.js" defer></script>
 </body>
 </html>
