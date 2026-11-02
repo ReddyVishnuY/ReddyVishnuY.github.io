@@ -303,6 +303,51 @@ function buildNavigation() {
   });
 }
 
+let lastVerseIndex = -1;
+
+function pickVerseIndex() {
+  if (gitaVerses.length < 2) return 0;
+  let index;
+  do {
+    index = Math.floor(Math.random() * gitaVerses.length);
+  } while (index === lastVerseIndex);
+  lastVerseIndex = index;
+  return index;
+}
+
+function createVerseCard() {
+  if (typeof gitaVerses === "undefined" || !gitaVerses.length) return null;
+
+  const card = makeElement("button", "verse-card");
+  card.type = "button";
+  card.title = "Click for another verse";
+
+  const icon = makeElement("span", "verse-icon");
+  icon.setAttribute("aria-hidden", "true");
+  icon.innerHTML =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" ' +
+    'stroke-linecap="round" stroke-linejoin="round" focusable="false">' +
+    '<path d="M12 3c2 3 5 5 5 9a5 5 0 0 1-10 0c0-2 1-3 2-4 .5 1 1 1.5 2 1.5C11 7 11 5 12 3z"/></svg>';
+
+  const text = makeElement("span", "verse-text");
+  const ref = makeElement("span", "verse-ref");
+
+  function showVerse() {
+    const verse = gitaVerses[pickVerseIndex()];
+    text.textContent = verse.text;
+    ref.textContent = verse.ref;
+    card.setAttribute("aria-label", `${verse.text} ${verse.ref}. Click for another verse.`);
+    card.classList.remove("is-changing");
+    void card.offsetWidth;
+    card.classList.add("is-changing");
+  }
+
+  showVerse();
+  card.addEventListener("click", showVerse);
+  card.append(icon, text, ref);
+  return card;
+}
+
 function renderHome() {
   const page = makeElement("article", "page home-page");
   const hero = makeElement("header", "hero");
@@ -334,7 +379,7 @@ function renderHome() {
   );
   const third = makeElement("p");
   third.append(
-    document.createTextNode("I enjoy learning how technology and reliable operations come together to solve practical problems. With an MBA in HR completed, I'm now looking for ServiceNow developer and IT service desk roles."),
+    document.createTextNode("I enjoy learning how technology and reliable operations come together to solve practical problems. With an MBA in HR completed, I'm now looking for ServiceNow developer and IT operations roles."),
   );
   copy.append(first, second, third);
 
@@ -368,6 +413,8 @@ function renderHome() {
     document.createTextNode(" using the sections on the left."),
   );
   page.append(hero, copy, contacts, prompt);
+  const verseCard = createVerseCard();
+  if (verseCard) page.append(verseCard);
   content.replaceChildren(page);
 }
 

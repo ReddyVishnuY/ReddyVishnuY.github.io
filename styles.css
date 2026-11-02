@@ -590,3 +590,72 @@ kbd {
 h1[tabindex="-1"]:focus {
   outline: none;
 }
+.verse-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  margin: 40px 0 0 0;
+  padding: 16px 20px 14px 30px;
+  border: 1px solid var(--blue);
+  border-radius: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.verse-icon {
+  position: absolute;
+  top: -16px;
+  left: -14px;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  background: var(--panel);
+  color: #c8ced8;
+}
+
+.verse-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.verse-text {
+  display: block;
+  margin-bottom: 8px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.verse-ref {
+  display: block;
+  color: var(--blue);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.verse-card:hover,
+.verse-card:focus-visible {
+  border-color: var(--orange);
+}
+
+.verse-card:hover .verse-ref,
+.verse-card:focus-visible .verse-ref {
+  color: var(--orange);
+}
+
+.verse-card.is-changing {
+  animation: arrive 180ms ease-out both;
+}
+
+@media (max-width: 760px) {
+  .verse-card {
+    margin-top: 30px;
+    padding: 14px 14px 12px 22px;
+  }
+}
